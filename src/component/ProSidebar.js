@@ -45,7 +45,7 @@ function ProSide() {
 
             <br />
             <div for="vehicle1" className="item-in-la">
-              <MenuItem>
+              <MenuItem className="menu-iteem">
                 {" "}
                 <input
                   type="radio"

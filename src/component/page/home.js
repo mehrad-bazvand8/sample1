@@ -2,8 +2,8 @@ import React from "react";
 import "./Home.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import ProSlidebar from "../component/ProSidebar";
-
+import ProSlidebar from "../ProSidebar";
+import Calendar from "../Calendar";
 function Home() {
   return (
     <>
@@ -11,8 +11,10 @@ function Home() {
         <div className="Calendar">
           <Router>
             <ProSlidebar />
+            <Calendar/>
+
           </Router>
-         
+          
         </div>
       </div>
     </>

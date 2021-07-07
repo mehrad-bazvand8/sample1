@@ -1,0 +1,132 @@
+.Calendar-component {
+  width: 100%;
+}
+.month {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0px 40px 0px 0px;
+  margin-left: 320px;
+  margin-top: -540px;
+  padding: 70px 25px;
+  width: 73.5%;
+  background: rgb(244, 245, 249);
+  text-align: center;
+  height: 100px;
+}
+.November{
+    font-size: 20px;
+    font-weight: bold;
+}
+.month-top-center{
+    font-size: 20px;
+    font-weight: bold;
+}
+.span-month-top{
+    font-size: 10px;
+    color: rgb(151, 151, 151);
+}
+.icon-search{
+    color: rgb(148, 148, 148);
+    margin-left: 5px;
+}
+.search-bar{
+    background: rgb(236, 236, 238);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.month-top{
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.date-month{
+    margin-top:-20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.date-month li{
+    margin: 15px;
+    border-radius: 20px;
+}
+.date-month li:hover{
+    background-color:chocolate;
+    border-radius: 20px;
+    transition: 1.5s;
+    
+}
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month li {
+    list-style-type: none;
+
+  color: rgb(49, 49, 49);
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+
+
+.weekdays {
+  position: absolute;
+  width: 67%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.158);
+  border-radius: 0px 0px 40px 40px;
+  margin-left: 300px;
+  padding: 10px 0;
+  background-color: rgb(231, 231, 233);
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+.days-calender1{
+    border-radius: 20px 0px 0px 0px;
+    
+
+}
+.days-calender2{
+    border-radius: 0px 0px 20px 0px;
+
+}
+.days-calender {
+    margin-top: 40px;
+
+  float: right;
+  height: 200px;
+  width: 73.5%;
+  padding: 10px 0;
+  background: #eee;
+  background-color: rgb(236, 241, 247);
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 10px;
+ 
+}
+
+.days-calender li {
+list-style-type: none;
+  text-align: center;
+  height: 57px;
+  font-size: 15px;
+  border: 1px solid rgb(177, 177, 177);
+  
+}
+.days-calender li:hover {
+   background-color: rgb(185, 185, 185);
+   transition: 1s;
+      
+    }
+.days-calender li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important;
+}
