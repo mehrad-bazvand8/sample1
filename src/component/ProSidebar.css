@@ -1,3 +1,97 @@
+.pro-sidebar-inner{
+    background-color: rgb(242, 243, 247);
+    border-radius: 40px ;
+    margin-top: -5px;
+    border-color: rgb(242, 243, 247);
+    width: 320px;
+}
+.pro-sidebar-layout{
+    
+    background-color: rgb(242, 243, 247);
+    border-color: rgb(242, 243, 247);
+    border-radius: 40px 0px 0px 40px ;
+    margin-left: -2px;
+    border-right: solid 1px;
+}
 .menu-bar{
-    height: 650px;
+
+    background-color: rgb(242, 243, 247);
+    width: 300px;
+    border-radius: 40px ;
+    border-color: rgb(242, 243, 247);
+}
+
+.profile{
+    width: 320px;
+    display: flex;
+    border-bottom: solid 1px;
+}
+.img-profile{
+    width: 40px;
+    border-radius: 20px;
+
+}
+.text-profile{
+    margin-left: 10px;
+    
+}
+.text-profile2{
+    margin-left: 10px;
+    color: black;
+}
+.MenuItem-top{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width:90% ;
+    background-color: rgb(242, 243, 247);
+    height: 360px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+}
+.tody{
+    color: rgb(133, 131, 131);
+    margin-left: 15px;
+}
+.days{
+    color: rgb(201, 18, 18);
+    margin-left: 15px;
+}
+.item-in-la{
+    margin-right: 5px;
+}
+.SubMenu-Down{
+    margin: 20px;
+    width: 275px;
+    background-color: rgb(242, 243, 247);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+}
+.button-task{
+    display: flex;
+    justify-content: center;
+    width:50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    margin: 20px;
+    height: 45px;
+
+
+}
+
+.PlusCircle{
+    color: rgb(116, 116, 116);
+    margin-top: 2px;
+    width: 15px;
+   
+}
+.button-text{
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.text-profile{
+    width: 30px;
+    margin-top: -60px;
 }

@@ -1,9 +1,13 @@
-import './App.css';
-import ProSlidebar from "./component/ProSidebar"
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./page/home"
 function App() {
   return (
     <div className="App">
-     <ProSlidebar />
+     
+      <Router>
+      <Home />
+      </Router>
     </div>
   );
 }
