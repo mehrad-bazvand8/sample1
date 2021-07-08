@@ -4,8 +4,31 @@ import "react-pro-sidebar/dist/css/styles.css";
 import "./ProSidebar.css";
 import { Link, Router } from "react-router-dom";
 import { BiPlusCircle } from "react-icons/bi";
+import Todolist from "./TodoList";
+import Modal from "react-modal";
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+  },
+};
 
 function ProSide() {
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+
+
+
+
   return (
     <>
       <ProSidebar className="Calendar">
@@ -25,9 +48,19 @@ function ProSide() {
               <div>
                 <BiPlusCircle className="PlusCircle" />
               </div>
-              <div className="button-text">
+              <div className="button-text" onClick={openModal}>
                 add a task
-                <Link to="/about" />
+                <Link to="/" />
+                <Modal
+                  isOpen={modalIsOpen}
+                  style={customStyles}
+                  contentLabel="Example Modal"
+                >
+                  
+                  <form>
+                    <Todolist/>
+                  </form>
+                </Modal>
               </div>
             </div>
 
@@ -54,45 +87,40 @@ function ProSide() {
                   className="item-in-la"
                 />
                 Book Rerurn Ticket
-                    <div className="tody">tody</div>
+                <div className="tody">tody</div>
               </MenuItem>
             </div>
             <br />
-              <MenuItem>
-                {" "}
-                <input
-                  type="radio"
-                  name="fav_language"
-                  value="caa"
-                  className="item-in-la"
-                />
-                Buy Anniver sary Gift
-                <div className="days">3 days ago</div>
-              </MenuItem>
+            <MenuItem>
+              {" "}
+              <input
+                type="radio"
+                name="fav_language"
+                value="caa"
+                className="item-in-la"
+              />
+              Buy Anniver sary Gift
+              <div className="days">3 days ago</div>
+            </MenuItem>
             <br />
-              <MenuItem>
-                {" "}
-               
-                  <input
-                    type="radio"
-                    name="fav_language"
-                    value="HTML"
-                    className="item-in-la"
-                  />
-               
-                Pay Electricity Bill
-              </MenuItem><br/>
-              
+            <MenuItem>
+              {" "}
+              <input
+                type="radio"
+                name="fav_language"
+                value="HTML"
+                className="item-in-la"
+              />
+              Pay Electricity Bill
+            </MenuItem>
+            <br />
           </div>
 
           <SubMenu className="SubMenu-Down" title="completed">
-            <MenuItem>Component 1</MenuItem>
-            <MenuItem>
-              Component 2 <Link to="/about" />
-            </MenuItem>
           </SubMenu>
         </Menu>
       </ProSidebar>
+     
     </>
   );
 }
